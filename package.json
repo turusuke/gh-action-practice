@@ -1,0 +1,23 @@
+{
+  "name": "gh-action-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turusuke/gh-action-practice.git"
+  },
+  "author": "turusuke <mail@turusuke.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turusuke/gh-action-practice/issues"
+  },
+  "homepage": "https://github.com/turusuke/gh-action-practice#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
