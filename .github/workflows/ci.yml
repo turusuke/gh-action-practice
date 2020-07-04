@@ -1,5 +1,7 @@
 name: Continuous Integration
 on: push
+env:
+  cache-version: v1
 
 jobs:
   unit-test:
@@ -24,7 +26,7 @@ jobs:
         uses: actions/cache@v2.0.0
         with:
           path: ${{ steps.npm-cache.outputs.dir }}
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ env.cache-version }}-${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           resore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependencies
